@@ -1,0 +1,514 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+@font-face {
+    font-family: 'bw_modelicaregular';
+    src: url('assets/font/bwmodelica-regular-webfont.woff2') format('woff2'),
+         url('assets/font/bwmodelica-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'bw_modelicamedium';
+    src: url('assets/font/bwmodelica-medium-webfont.woff2') format('woff2'),
+         url('assets/font/bwmodelica-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    font-family: 'bw_modelicaregular';
+    font-size: 16px;
+    color: #7D8790;
+}
+
+h3{
+    font-family: 'bw_modelicamedium';
+}
+
+.active{
+    display: flex;
+}
+
+.icon-menu{
+    display: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.btn{
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 5px;
+    border-radius: 200px;
+    text-decoration: none;
+    font-size: 14px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    -ms-border-radius: 200px;
+    -o-border-radius: 200px;
+    
+}
+
+.btn:hover{
+    color: #fff;
+}
+
+.btn-1{
+    background-color: #183E4B;
+    padding: 10px 20px;
+}
+
+.btn-2{
+    background-color: #00B8C4;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    transform-origin:left top;
+}
+
+nav div:first-child{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav div:last-child a{
+    margin-left: 8px;
+}
+
+nav div:first-child div{
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+nav div:first-child div a{
+    margin: 0 10px;
+    text-decoration: none;
+    color : #7D8790
+}
+
+nav select{
+    border: none;
+    background-color: transparent;
+    color: #7D8790;
+    font-size: 14px;
+    font-family: 'bw_modelicaregular';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 15px 30px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+nav div:first-child div a:hover{
+    color: #1E3A8A;
+}
+
+nav img{
+    max-width: 150px;
+}
+
+main{
+    text-align: center;
+    padding: 40px 0;
+}
+
+main div:first-child{
+    padding-top: 60px;
+}
+
+main div:last-child{
+    padding: 40px 0;
+    font-size: 60px;
+    color: #183E4B;
+}
+
+h4{
+    font-size: 14px;
+    letter-spacing: 4px;
+    color: #9DA4AA;
+    text-transform: uppercase;
+
+}
+
+.hidden{
+    display: none;
+}
+
+.banner{
+    margin: 40px 0;
+    height: 400px;
+    width: 100%;
+    background-image: url('assets/img/img-1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.col{
+    content: "";
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.col, .col-12{
+    width: 100%;
+}
+
+.col-6{
+    width: 50%;
+}
+
+.col-4{
+    width: 33.33333333333333%;
+}
+
+.col-3{
+    width: 25%;
+}
+
+.col-9{
+    width: 75%;
+}
+
+.pt-40{
+    padding-top: 40px;
+}
+.pb-40{
+    padding-bottom: 40px;
+}
+
+section h2{
+    font-size: 40px;
+    color: #183E4B;
+    margin-top: 40px;
+}
+
+.texto{
+    padding: 0 40px;
+    padding-left: 60px;
+}
+
+.texto p{
+    width: 90%;
+    padding-bottom: 20px;
+    font-size: 14px;
+    line-height: 2;
+    color: #7D8790;
+}
+
+
+.vantagens h3{
+    color: #183E4B;
+    font-size: 32px;
+    padding: 20px 0;
+}
+
+.card{
+    padding-right: 20px;
+    padding-top: 40px;
+}
+
+.card div:first-child p{
+    color: #183E4B;
+    font-family: 'bw_modelicamedium';
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+}
+
+.card div:last-child p{
+    color: #707070;
+    font-size: 14px;
+    line-height: 2;
+}
+
+#sust{
+    background-color: #F6F6F6;
+    
+}
+
+#sust img{
+    width: 100%;
+    object-fit: cover;
+}
+
+#sust .col-6:first-child{
+    padding-left: 40px;
+}
+
+#sust .col-6 > div:nth-child(3){
+    padding: 40px 80px 40px 0px;
+}
+
+#sust .col-6 > div:nth-child(3) p{
+    line-height: 1.5;
+}
+
+
+
+#dev > div:nth-child(2){
+    color: #183E4B;
+    font-size: 32px;
+    padding: 40px 0;
+} 
+
+
+.bloco-texto{
+    width: 45%;
+    padding: 20px 10px;
+}
+
+.bloco-texto div:first-child{
+    padding-bottom: 20px;
+}
+
+.bloco-texto div:last-child{
+    line-height: 1.5;
+}
+
+.bloco-texto strong{
+    color: #183E4B;
+    font-family: 'bw_modelicamedium';
+}
+
+
+#dev .col{
+    flex-wrap: wrap;
+}
+
+.cta{
+    border-top: 0.5px solid #EDEDED;
+}
+
+.cta .col{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cta .marcas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cta .marcas img{
+    margin: 0 8px;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+
+.cta .marcas img:hover{
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+
+#contato{
+    text-align: center;
+    background-image: url('assets/img/img-2.webp');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#contato div div:nth-child(1){
+    font-size: 42px;
+    padding-top: 40px;
+}
+
+
+#contato div div:nth-child(2){
+    padding: 70px 0;
+}
+
+#contato div div:nth-child(3){
+    padding-bottom: 40px;
+}
+
+
+#footer{
+    background-color: #05161D;
+    color: #fff;
+    padding: 80px 0;
+}
+
+#footer .col{
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+#footer img{
+    max-width: 150px;
+}
+
+#footer strong{
+    font-size: 14px;
+    color: #fff;
+    font-family: 'bw_modelicamedium';
+}
+
+#footer p{
+    font-size: 12px;
+    color: #fff;
+    line-height: 1.5;
+    margin-top: 14px;
+}
+
+
+@media(max-width: 920px){
+    main{
+        padding: 20px 0;
+    }
+    .container{
+        text-align: center;
+    }
+    .col{
+        padding: 20px 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        align-items: center;
+    }
+    .col-6, .col-4, .col-3, .col-9{
+        width: 100%;
+        padding: 20px 0;
+    }
+    .texto{
+        padding: 0 20px;
+    }
+    .texto p{
+        width: 100%;
+    }
+
+    #sust .col-6 > div:nth-child(3){
+        padding: 0;
+    }
+
+    #sust .col-6:first-child{
+        padding-left: 0;
+        padding: 20px 10px;
+    }
+
+    .cta .marcas{
+        padding-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta .marcas img{
+        margin: 8px 0;
+    }
+
+    #footer{
+        padding: 20px 0;
+    }
+
+
+    #footer > div > div{
+        margin: 10px 0;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu-options{
+        display: flex;
+        align-items: center;
+    }
+
+    .icon-menu{
+        display: inline;
+        cursor: pointer;
+        margin-right: 8px;
+    }
+
+    #sust .col .col-6:first-child{
+        padding: 0 20px;
+    }
+
+    #sust .col .col-6:first-child div:nth-child(3){
+        padding: 40px 0;
+    }
+
+
+
+}
